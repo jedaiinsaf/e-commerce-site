@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insaf - Panier</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #111;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        /* Main Header Section */
+        .header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Cart Section */
+        .cart-section {
+            padding: 50px 20px;
+        }
+
+        /* Cart Item */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .cart-item .item-info {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .cart-item h5 {
+            font-size: 20px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .cart-item .price {
+            color: #999;
+            font-size: 18px;
+        }
+
+        .cart-item .quantity {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-item .quantity input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cart-item .remove-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cart-item .remove-btn:hover {
+            background-color: #f39c12;
+        }
+
+        /* Cart Total */
+        .cart-total {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .cart-total h4 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .cart-total .total-price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .checkout-btn {
+            background-color: #111;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #f1c40f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+            <a href="panier.html">Panier</a>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Section Start -->
+    <div class="header">
+        <h1>Your Shopping Cart</h1>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Cart Section Start -->
+    <div class="cart-section">
+        <!-- Cart Item -->
+        <div class="cart-item">
+            <img src="img/jpq1.jpg" alt="Product 1">
+            <div class="item-info">
+                <h5>Glowing Face Cream</h5>
+                <p class="price">$30.00</p>
+                <div class="quantity">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" value="1" min="1">
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/jpq51.jpg" alt="Product 2">
+            <div class="item-info">
+                <h5>Anti-Wrinkle Serum</h5>
+                <p class="price">$35.00</p>
+                <div class="quantity">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" value="1" min="1">
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/jpq20.jpg" alt="Product 3">
+            <div class="item-info">
+                <h5>Hydrating Toner</h5>
+                <p class="price">$25.00</p>
+                <div class="quantity">
+                    <label for="quantity3">Quantity:</label>
+                    <input type="number" id="quantity3" value="1" min="1">
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- Cart Total -->
+        <div class="cart-total">
+            <h4>Total Price:</h4>
+            <p class="total-price">$90.00</p>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+    <!-- Cart Section End -->
+
+</body>
+
+</html>

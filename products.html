@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insaf - Cosmetic Products</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #111;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        /* Main Header Section */
+        .header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Products Grid Section */
+        .products-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        /* Product Item */
+        .product-item {
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 80%;
+            height: auto;
+            margin: 10px auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h5 {
+            margin: 15px 0;
+            font-size: 22px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .product-info p {
+            margin: 5px 0;
+            color: #999;
+            font-size: 18px;
+        }
+
+        .product-info .btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-info .btn:hover {
+            background-color: #f1c40f;
+        }
+
+        .add-to-cart-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #f39c12;
+        }
+
+        /* View All Button */
+        .view-all-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .view-all-btn a {
+            padding: 12px 30px;
+            background-color: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-all-btn a:hover {
+            background-color: #f1c40f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Section Start -->
+    <div class="header">
+        <h1>Explore Our Premium Products</h1>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Products Section Start -->
+    <div class="products-section">
+        <!-- Product Items -->
+        <div class="product-item">
+            <img src="img/" alt="Product 1">
+            <div class="product-info">
+                <h5>Glowing Face Cream</h5>
+                <p>$30.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="img/" alt="Product 2">
+            <div class="product-info">
+                <h5>Anti-Wrinkle Serum</h5>
+                <p>$35.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="img/" alt="Product 3">
+            <div class="product-info">
+                <h5>Hydrating Toner</h5>
+                <p>$25.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="img/" alt="Product 4">
+            <div class="product-info">
+                <h5>Brightening Serum</h5>
+                <p>$40.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="img/" alt="Product 5">
+            <div class="product-info">
+                <h5>Renewal Night Cream</h5>
+                <p>$50.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="img/" alt="Product 6">
+            <div class="product-info">
+                <h5>Revitalizing Eye Gel</h5>
+                <p>$28.00</p>
+                <a href="product-detail.html" class="btn">View Product</a>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Products Section End -->
+
+    <!-- View All Button -->
+    <div class="view-all-btn">
+        <a href="products2.html">View All Products</a>
+    </div>
+
+</body>
+
+</html>

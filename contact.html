@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insaf - Contact Us</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #111;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            padding: 40px;
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px); /* Slight blur effect */
+        }
+
+        /* Label Styling */
+        .contact-form label {
+            display: block;
+            color: #333; /* Dark text for labels */
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Input and Textarea Styling */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            background: #f8f8f8;
+            font-size: 16px;
+            border-radius: 5px;
+            color: #333;
+            transition: border 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #f1c40f;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        /* Submit Button Styling */
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #111;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #f1c40f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Section Start -->
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Contact Form Section Start -->
+    <div class="contact-form">
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Enter the subject" required>
+
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <!-- Contact Form Section End -->
+
+</body>
+
+</html>
+
